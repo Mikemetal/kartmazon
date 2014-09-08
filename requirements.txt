@@ -32,7 +32,7 @@ pysqlite==2.6.3
 pystache==0.5.3
 python-apt==0.8.5
 python-debian==0.1.21
-python-debianbts==1.11
+python-debianbts==1.10
 pyxdg==0.19
 reportbug==6.4.4
 reportlab==2.5
