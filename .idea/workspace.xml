@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/kartmazon/settings.py" line="93" />
+    <bookmark url="file://$PROJECT_DIR$/kartmazon/settings.py" line="92" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b7b787b-32ee-4b02-b9c3-99ff9751b146" name="Default" comment="" />
@@ -29,7 +29,7 @@
       <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kartmazon/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="24" selection-start="1311" selection-end="1311" vertical-scroll-proportion="0.63175124" vertical-offset="424" max-vertical-offset="2175">
+            <state line="53" column="31" selection-start="1286" selection-end="1286" vertical-scroll-proportion="0.65630114" vertical-offset="394" max-vertical-offset="2160">
               <folding />
             </state>
           </provider>
@@ -830,7 +830,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kartmazon/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="24" selection-start="1311" selection-end="1311" vertical-scroll-proportion="0.63175124" vertical-offset="424" max-vertical-offset="2175">
+        <state line="53" column="31" selection-start="1286" selection-end="1286" vertical-scroll-proportion="0.65630114" vertical-offset="394" max-vertical-offset="2160">
           <folding />
         </state>
       </provider>

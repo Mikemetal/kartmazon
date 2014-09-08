@@ -52,7 +52,6 @@ INSTALLED_APPS = (
     'vehiculos',
     'rest_framework',
     'rest_framework.authtoken',
-    'django_extensions',
     'corsheaders',
 )
 
