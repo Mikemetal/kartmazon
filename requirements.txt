@@ -22,7 +22,7 @@ djangorestframework==2.3.13
 gunicorn==19.1.1
 httplib2==0.7.4
 mysql-connector-python==1.2.3
-mysql-utilities==1.0.3
+mysql-utilities==1.4.3
 pexpect==2.4
 psycopg2==2.5.4
 pycrypto==2.6
