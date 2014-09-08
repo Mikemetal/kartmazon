@@ -1,3 +1,5 @@
+--allow-all-external
+--allow-unverified PIL
 Django==1.7
 Mako==0.7.0
 Markdown==2.4.1
