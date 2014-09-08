@@ -75,7 +75,15 @@ WSGI_APPLICATION = 'kartmazon.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dd6fp3ujcr13fh',
+        'HOST': 'ec2-54-204-43-138.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'USER': 'mulucakwetqfxl',
+        'PASSWORD': 'xBEDTlOmsgOhAAZE2CHAOSyQcV'
+    },
+    'desarrollo': {
+        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'kartmazon',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': 'root',
@@ -83,6 +91,15 @@ DATABASES = {
         'HOST': 'localhost',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
         'PORT': '',                      # Set to empty string for default.
     }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+    #     'NAME': 'kartmazon',                      # Or path to database file if using sqlite3.
+    #     # The following settings are not used with sqlite3:
+    #     'USER': 'root',
+    #     'PASSWORD': 'w4p1ll0',
+    #     'HOST': 'localhost',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+    #     'PORT': '',                      # Set to empty string for default.
+    # }
 }
 
 # Internationalization
