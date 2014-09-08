@@ -1,6 +1,7 @@
 --allow-all-external
 --allow-unverified PIL
 --allow-unverified defer
+--allow-unverified python-apt
 Django==1.7
 Mako==0.7.0
 Markdown==2.4.1
