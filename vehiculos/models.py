@@ -11,7 +11,12 @@ class Vehiculos(models.Model):
     descripcion = models.CharField(max_length=45, blank=True) # Field name made lowercase.
     year = models.IntegerField(blank=True, null=True) # Field name made lowercase.
     kilometraje = models.IntegerField(blank=True, null=True) # Field name made lowercase.
-    contador = models.IntegerField(blank=True, null=True) # Field name made lowercase.
+    contador = models.IntegerField(blank=True, null=True, default=0) # Field name made lowercase.
     created_at = models.DateTimeField(auto_now_add=True)
     modified_at = models.DateTimeField(auto_now=True)
 
+    def __unicode__(self):
+        return "%s - %s" % (self.modelo,self.year)
+
+    class Meta:
+        verbose_name_plural = "Vehiculos"

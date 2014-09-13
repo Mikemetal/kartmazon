@@ -5,3 +5,6 @@ class Marca(models.Model):
 
     def __unicode__(self):
         return self.nombre
+
+    class Meta:
+        verbose_name_plural = "Marcas"

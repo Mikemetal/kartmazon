@@ -3,15 +3,15 @@ from rest_framework import serializers
 #from django.contrib.auth.models import User
 from vehiculos.models import Vehiculos
 
-
 class VehiculoSerializer(serializers.ModelSerializer):
     #owner = serializers.Field(source='owner.username')
     modelo = serializers.RelatedField(many=False)
     tipovehiculo = serializers.RelatedField(many=False)
     usuario = serializers.RelatedField(many=False)
+    fotosvehiculos = serializers.RelatedField(many=True)
     class Meta:
         model = Vehiculos
-        fields = ('id', 'usuario', 'modelo','tipovehiculo','precio','descripcion','year','kilometraje','contador','created_at','modified_at')
+        fields = ('id', 'usuario', 'modelo','tipovehiculo','precio','descripcion','year','kilometraje','contador','created_at','modified_at','fotosvehiculos')
 
     def restore_object(self, attrs, instance=None):
         """

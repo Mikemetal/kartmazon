@@ -5,3 +5,6 @@ class Ads(models.Model):
 
     def __unicode__(self):
         return self.descripcion
+
+    class Meta:
+        verbose_name_plural = "Ads"
