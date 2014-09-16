@@ -8,8 +8,15 @@ from rest_framework import permissions
 class ModelosList(generics.ListCreateAPIView):
     serializer_class = ModeloSerializer
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
-    queryset = Modelo.objects.all()
+    # queryset = Modelo.objects.all()
     paginate_by = 50
+
+    def get_queryset(self):
+        queryset = Modelo.objects.all()
+        marca = self.request.QUERY_PARAMS.get('marca', None)
+        if marca is not None:
+            queryset = queryset.filter(marca=marca)
+        return queryset
 
 
 class ModelosDetail(generics.RetrieveUpdateDestroyAPIView):
