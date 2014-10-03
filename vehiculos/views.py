@@ -67,7 +67,7 @@ class VehiculosListAdd(generics.ListCreateAPIView):
 
 class VehiculosList(generics.ListAPIView):
     serializer_class = VehiculoSerializer
-    permission_classes = (permissions.IsAuthenticatedOrReadOnly)
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     # queryset = Vehiculos.objects.all()
 
     def get_queryset(self):
