@@ -115,7 +115,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
@@ -128,6 +127,9 @@ REST_FRAMEWORK = {
  # 'DEFAULT_PERMISSION_CLASSES': (
  #     'rest_framework.permissions.IsAdminUser','rest_framework.permissions.IsAuthenticated'
  # ),
+ 'DEFAULT_PARSER_CLASSES': (
+     'rest_framework.parsers.FileUploadParser',
+ ),
  'DEFAULT_AUTHENTICATION_CLASSES': (
      'rest_framework.authentication.TokenAuthentication',
      'rest_framework.authentication.SessionAuthentication',
@@ -148,9 +150,15 @@ ALLOWED_HOSTS = ['*']
 
 # Static asset configuration
 import os
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+MAX_UPLOAD_SIZE = 20971520  # 20MB
+CONTENT_TYPES = ['application/pdf', 'image/jpeg', 'image/png']  # .pdf, .jpeg and .png
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),

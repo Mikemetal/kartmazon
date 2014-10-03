@@ -4,7 +4,8 @@ from vehiculos import views
 
 urlpatterns = patterns('',
     url(r'^$', 'api_root'),
-    url(r'^vehiculo/$', views.VehiculosList.as_view()),
+    url(r'^vehiculo/$', views.VehiculosListAdd.as_view()),
+    url(r'^listvehiculo/$', views.VehiculosList.as_view()),
     url(r'^vehiculo/(?P<pk>[0-9]+)/$', views.VehiculosDetail.as_view()),
 )
 

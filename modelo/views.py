@@ -9,13 +9,16 @@ class ModelosList(generics.ListCreateAPIView):
     serializer_class = ModeloSerializer
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     # queryset = Modelo.objects.all()
-    paginate_by = 50
+    # paginate_by = 50
 
     def get_queryset(self):
-        queryset = Modelo.objects.all()
         marca = self.request.QUERY_PARAMS.get('marca', None)
         if marca is not None:
-            queryset = queryset.filter(marca=marca)
+            queryset = Modelo.objects.all().filter(marca=marca)
+            # queryset = queryset.filter(marca=marca)
+            # queryset = queryset.filter(marca__nombre__exact=marca)
+        else:
+            queryset = Modelo.objects.all()
         return queryset
 
 
