@@ -9,4 +9,5 @@ class Modelo(models.Model):
         return self.nombre
 
     class Meta:
+        db_table = 'Modelos'
         verbose_name_plural = "Modelos"

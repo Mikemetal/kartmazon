@@ -9,4 +9,5 @@ class Ciudad(models.Model):
         return self.nombre
 
     class Meta:
+        db_table = 'Ciudades'
         verbose_name_plural = "Ciudades"

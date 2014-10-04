@@ -9,6 +9,7 @@ class Fotosvehiculos(models.Model):
     path = models.ImageField(upload_to="/media", blank=True) # Field name made lowercase.
 
     class Meta:
+        db_table = 'FotosVehiculos'
         verbose_name_plural = "Fotosvehiculos"
 
     def __unicode__(self):

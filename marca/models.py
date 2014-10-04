@@ -7,4 +7,5 @@ class Marca(models.Model):
         return self.nombre
 
     class Meta:
+        db_table = 'Marcas'
         verbose_name_plural = "Marcas"

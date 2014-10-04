@@ -6,4 +6,5 @@ class Follows(models.Model):
     vehiculo = models.ForeignKey(Vehiculos, related_name='vehiculo_vehiculo')
 
     class Meta:
+        db_table = 'Follows'
         verbose_name_plural = "Follows"

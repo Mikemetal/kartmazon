@@ -7,4 +7,5 @@ class Tipovehiculo(models.Model):
         return self.nombre
 
     class Meta:
+        db_table = 'TipoVehiculos'
         verbose_name_plural = "Tiposvehiculos"

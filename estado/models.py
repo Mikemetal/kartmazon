@@ -7,4 +7,5 @@ class Estado(models.Model):
         return self.nombre
 
     class Meta:
+        db_table = 'Estados'
         verbose_name_plural = "Estados"

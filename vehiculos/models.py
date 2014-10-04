@@ -19,4 +19,5 @@ class Vehiculos(models.Model):
         return "%s - %s" % (self.modelo,self.year)
 
     class Meta:
+        db_table = 'Vehiculos'
         verbose_name_plural = "Vehiculos"

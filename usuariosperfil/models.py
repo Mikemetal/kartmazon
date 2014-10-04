@@ -6,4 +6,5 @@ class Usuariosperfil(models.Model):
     descripcion = models.CharField(max_length=45, blank=True) # Field name made lowercase.
 
     class Meta:
+        db_table = 'UsuarioPerfil'
         verbose_name_plural = "Usuariosperfiles"

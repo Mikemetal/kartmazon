@@ -9,4 +9,5 @@ class Ofertas(models.Model):
     contraoferta = models.DecimalField(max_digits=10, decimal_places=0, blank=True, null=True) # Field name made lowercase.
 
     class Meta:
+        db_table = 'Ofertas'
         verbose_name_plural = "Ofertas"

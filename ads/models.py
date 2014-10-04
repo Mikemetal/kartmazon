@@ -7,4 +7,5 @@ class Ads(models.Model):
         return self.descripcion
 
     class Meta:
+        db_table = 'Ads'
         verbose_name_plural = "Ads"
